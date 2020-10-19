@@ -16,6 +16,7 @@ console.log(personCopy);
 person.name = "Nasim Molla";
 console.log(personCopy);
 
+
 // we can use spread operator to achieve copy by value
 person.name = "Abhishek Ghosh";
 personCopy = { ...person };
