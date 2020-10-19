@@ -3,6 +3,11 @@ const area = function (r) {
     return PI * r * r;
 }
 
+// export const PI = 3.14;
+// export const area = function (r) {
+//     return PI * r * r;
+// }
+
 module.exports = {
     PI,area
 }
