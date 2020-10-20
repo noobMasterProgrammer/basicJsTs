@@ -9,8 +9,8 @@ class Person{
     get LastName() {
         return this.lastName;
     }
-    set LastName(lastname: string) {
-        this.lastName = lastname;
+    set LastName(lastName: string) {
+        this.lastName = lastName;
     }
     public show():void {
         console.log(`${this.firstName} ${this.lastName}`);

@@ -1,27 +1,27 @@
 "use strict";
-class Person {
+class User {
     constructor(firstName, lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    get FirstName() {
+    getFirstName() {
         return this.firstName;
     }
-    set FirstName(firstName) {
+    setFirstName(firstName) {
         this.firstName = firstName;
     }
-    get LastName() {
+    getLastName() {
         return this.lastName;
     }
-    set LastName(lastName) {
-        this.lastName = lastName;
+    setLastName(lastname) {
+        this.lastName = lastname;
     }
     show() {
         console.log(`${this.firstName} ${this.lastName}`);
     }
 }
-let abhishek = new Person("Abhishek", "Ghosh");
-abhishek.show();
-abhishek.FirstName = "Nasim";
-abhishek.LastName = "Molla";
-abhishek.show();
+let nasim = new User("Abhishek", "Ghosh");
+nasim.show();
+nasim.setFirstName("Nasim");
+nasim.setLastName("Molla");
+nasim.show();
