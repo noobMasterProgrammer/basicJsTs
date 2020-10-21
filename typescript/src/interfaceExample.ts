@@ -3,6 +3,7 @@ interface IDeveloper{
     language: string;
     code(): void;
 }
+
 class Developer implements IDeveloper{
     name: string;
     language: string;
@@ -26,3 +27,13 @@ developer.code();
 
 developer = new Developer("Abhishek Ghosh", "Java");
 developer.code();
+
+interface Point{
+    x: number;
+    y: number;
+}
+
+let draw = (point: Point): void => {
+    console.log(point);
+}
+draw({ x: 25, y: 25 });

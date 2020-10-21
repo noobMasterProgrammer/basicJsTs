@@ -18,3 +18,7 @@ let developer = {
 developer.code();
 developer = new Developer("Abhishek Ghosh", "Java");
 developer.code();
+let draw = (point) => {
+    console.log(point);
+};
+draw({ x: 25, y: 25 });
