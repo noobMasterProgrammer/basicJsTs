@@ -10,7 +10,13 @@ function showDetails(firstName, lastName, gender) {
         console.log("gender is " + gender);
     }
 }
+function echoAny(arg) {
+    console.log(arg);
+    return arg;
+}
 show(10, 20);
 show(50);
 showDetails("Abhishek", "ghosh", "male");
 showDetails("Nasim", "Molla");
+var randObject = { "name": "Abhishek Ghosh", "gender": "Male" };
+echoAny(randObject);
