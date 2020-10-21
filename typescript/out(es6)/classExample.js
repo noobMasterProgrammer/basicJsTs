@@ -1,6 +1,12 @@
 "use strict";
-class User {
+class Human {
+    shout() {
+        console.log("I am a human");
+    }
+}
+class User extends Human {
     constructor(firstName, lastName) {
+        super();
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -19,9 +25,13 @@ class User {
     show() {
         console.log(`${this.firstName} ${this.lastName}`);
     }
+    shout() {
+        super.shout();
+    }
 }
 let nasim = new User("Abhishek", "Ghosh");
 nasim.show();
 nasim.setFirstName("Nasim");
 nasim.setLastName("Molla");
 nasim.show();
+nasim.shout();
