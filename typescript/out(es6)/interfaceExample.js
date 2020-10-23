@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Developer = void 0;
 class Developer {
     constructor(name, language) {
         this.name = name;
@@ -8,6 +10,7 @@ class Developer {
         console.log(`My name is ${this.name}, I love ${this.language}`);
     }
 }
+exports.Developer = Developer;
 let developer = {
     name: "Abhishek",
     language: "python",

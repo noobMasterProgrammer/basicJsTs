@@ -1,4 +1,4 @@
-class Person{
+export class Person{
     constructor(private firstName: string,private lastName:string) { }
     get FirstName() {
         return this.firstName;

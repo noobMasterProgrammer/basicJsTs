@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.week = void 0;
 var week;
 (function (week) {
     week[week["SUN"] = 0] = "SUN";
@@ -7,6 +9,6 @@ var week;
     week[week["WED"] = 3] = "WED";
     week[week["FRI"] = 4] = "FRI";
     week[week["SAT"] = 5] = "SAT";
-})(week || (week = {}));
+})(week = exports.week || (exports.week = {}));
 let day = week.SUN;
 console.log(day);

@@ -1,9 +1,9 @@
-class Human{
+export class Human{
     protected shout(): void{
         console.log("I am a human");
     }
 }
-class User extends Human{
+export class User extends Human{
     private firstName:string;
     private lastName:string;
     constructor(firstName: string, lastName: string) {

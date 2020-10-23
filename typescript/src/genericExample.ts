@@ -1,4 +1,4 @@
-class Item{
+export class Item{
     constructor(private name: string, private count: number) { }
     get Name(): string{
         return this.name;
@@ -14,7 +14,7 @@ class Item{
     }
 }
 
-class List<T>{
+export class List<T>{
     private list: T[];
     private count: number;
     constructor() {

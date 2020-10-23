@@ -1,9 +1,12 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.User = exports.Human = void 0;
 class Human {
     shout() {
         console.log("I am a human");
     }
 }
+exports.Human = Human;
 class User extends Human {
     constructor(firstName, lastName) {
         super();
@@ -29,6 +32,7 @@ class User extends Human {
         super.shout();
     }
 }
+exports.User = User;
 let nasim = new User("Abhishek", "Ghosh");
 nasim.show();
 nasim.setFirstName("Nasim");

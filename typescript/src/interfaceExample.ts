@@ -1,10 +1,10 @@
-interface IDeveloper{
+export interface IDeveloper{
     name: string;
     language: string;
     code(): void;
 }
 
-class Developer implements IDeveloper{
+export class Developer implements IDeveloper{
     name: string;
     language: string;
     constructor(name: string, language: string) {

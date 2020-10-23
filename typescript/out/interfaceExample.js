@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Developer = void 0;
 var Developer = /** @class */ (function () {
     function Developer(name, language) {
         this.name = name;
@@ -8,6 +11,7 @@ var Developer = /** @class */ (function () {
     };
     return Developer;
 }());
+exports.Developer = Developer;
 var developer = {
     name: "Abhishek",
     language: "python",

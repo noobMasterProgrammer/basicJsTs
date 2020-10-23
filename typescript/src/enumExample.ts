@@ -1,4 +1,4 @@
-enum week{
+export enum week{
     SUN, MON, TUE, WED, FRI, SAT
 }
 

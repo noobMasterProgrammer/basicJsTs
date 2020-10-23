@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.List = exports.Item = void 0;
 class Item {
     constructor(name, count) {
         this.name = name;
@@ -17,6 +19,7 @@ class Item {
         this.count = count;
     }
 }
+exports.Item = Item;
 class List {
     constructor() {
         this.count = 0;
@@ -39,6 +42,7 @@ class List {
         return this.list;
     }
 }
+exports.List = List;
 function echo(item) {
     console.log(item);
     return item;

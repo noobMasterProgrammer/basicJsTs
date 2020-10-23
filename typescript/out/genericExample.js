@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.List = exports.Item = void 0;
 var Item = /** @class */ (function () {
     function Item(name, count) {
         this.name = name;
@@ -25,6 +28,7 @@ var Item = /** @class */ (function () {
     });
     return Item;
 }());
+exports.Item = Item;
 var List = /** @class */ (function () {
     function List() {
         this.count = 0;
@@ -48,6 +52,7 @@ var List = /** @class */ (function () {
     };
     return List;
 }());
+exports.List = List;
 function echo(item) {
     console.log(item);
     return item;

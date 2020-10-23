@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Person = void 0;
 var Person = /** @class */ (function () {
     function Person(firstName, lastName) {
         this.firstName = firstName;
@@ -17,8 +20,8 @@ var Person = /** @class */ (function () {
         get: function () {
             return this.lastName;
         },
-        set: function (lastname) {
-            this.lastName = lastname;
+        set: function (lastName) {
+            this.lastName = lastName;
         },
         enumerable: false,
         configurable: true
@@ -28,6 +31,7 @@ var Person = /** @class */ (function () {
     };
     return Person;
 }());
+exports.Person = Person;
 var abhishek = new Person("Abhishek", "Ghosh");
 abhishek.show();
 abhishek.FirstName = "Nasim";

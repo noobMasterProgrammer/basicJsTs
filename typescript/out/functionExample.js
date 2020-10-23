@@ -1,3 +1,4 @@
+"use strict";
 function show(a, b) {
     if (b === void 0) { b = 0; }
     console.log("a is " + a);
