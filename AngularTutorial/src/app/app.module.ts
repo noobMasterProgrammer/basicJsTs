@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
 import { SampleService } from './sample/sample.service';
+import { BindingComponent } from './binding/binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SampleComponent,
+    BindingComponent,
   ],
   imports: [
     BrowserModule,
