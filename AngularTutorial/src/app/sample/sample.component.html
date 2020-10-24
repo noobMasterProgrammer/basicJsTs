@@ -6,3 +6,8 @@
     {{ course }}
   </li>
 </ul>
+<select>
+  <option *ngFor="let user of getUsers()">
+    {{ user }}
+  </option>
+</select>
