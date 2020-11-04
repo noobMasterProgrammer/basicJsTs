@@ -1,5 +1,13 @@
 <div>
   <p>{{ title }}</p>
+  <p [textContent]="title"></p>
   <img src="{{ imageUrl }}" />
   <img [src]="imageUrl" />
+  <table>
+    <tr>
+      <td [attr.colspan]="colspan">Only one TD</td>
+    </tr>
+  </table>
+
+  <button class="btn btn-primary">Bootstrap-Button-Primary</button>
 </div>
