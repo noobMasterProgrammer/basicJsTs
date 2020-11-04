@@ -15,5 +15,30 @@ export class BindingComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  public onClick(obj: any,$event: any): void{
+    console.log(`I am clicked ${obj} `, $event);
+  }
+  public onButtonClick($event): void{
+    $event.stopPropagation();
+    console.log('Event Bubbling Button is Clicked');
+  }
+   public onDivClick(): void{
+    console.log('Event Bubbling Div is Clicked');
+  }
 
+  public onKeyUpWithoutEventFilter($event: any): void{
+    if ($event.keyCode === 13) {
+      console.log('Enter is pressed');
+    }
+  }
+  public onKeyUpWithEventFilter(): void{
+    console.log('Enter is pressed');
+  }
+    public onKeyUp($event: any): void{
+    console.log($event.target.value);
+    //console.log($event.keyCode);
+    }
+  public onKeyUpWithTemplateVariable(name: any): void{
+    console.log(name);
+  }
 }
