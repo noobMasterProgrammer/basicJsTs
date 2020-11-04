@@ -9,5 +9,13 @@
     </tr>
   </table>
 
-  <button class="btn btn-primary">Bootstrap-Button-Primary</button>
+  <button class="btn btn-primary" [class.active]="isActive">
+    Bootstrap-Button-Primary
+  </button>
+  <button
+    class="btn btn-primary"
+    [style.background]="isActive ? 'blue' : 'red'"
+  >
+    Bootstrap-Button-Primary
+  </button>
 </div>
