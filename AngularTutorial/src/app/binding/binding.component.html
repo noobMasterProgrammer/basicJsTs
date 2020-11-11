@@ -27,6 +27,11 @@
   <input (keyup)="onKeyUpWithoutEventFilter($event)" />
   <input (keyup.enter)="onKeyUpWithEventFilter()" />
 
-  <input (keyup.enter)="onKeyUp($event)" />
-  <input #name (keyup.enter)="onKeyUpWithTemplateVariable(name.value)" />
+  <input (keyup.enter)="onKeyUp($event)" /><br />
+  <input #name (keyup.enter)="onKeyUpWithTemplateVariable(name.value)" /><br />
+
+  <input (keyup)="fullname = $event.target.value; logFullname()" /><br />
+  {{ fullname }}<br />
+  <input [(ngModel)]="fullName" /> <br />
+  <p>{{ fullName }}</p>
 </div>

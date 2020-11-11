@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
 import { SampleService } from './sample/sample.service';
 import { BindingComponent } from './binding/binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BindingComponent } from './binding/binding.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [SampleService],
   bootstrap: [AppComponent]
