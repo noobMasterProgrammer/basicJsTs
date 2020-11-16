@@ -13,6 +13,14 @@ export class BindingComponent implements OnInit {
   public imageUrl = 'https://avatars3.githubusercontent.com/u/31528255?s=460&u=26403ba4769620c756f93105ac6d575c22c9ff14&v=4';
   public fullName = 'Abhishek';
   public fullname = 'Abhishek';
+
+  public course={
+    title:'Sample title',
+    rating:4.551,
+    students:1000,
+    price:100.659,
+    releaseData: new Date(2016,3,1)
+  }
   constructor() { }
 
   ngOnInit(): void {

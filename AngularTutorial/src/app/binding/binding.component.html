@@ -30,8 +30,14 @@
   <input (keyup.enter)="onKeyUp($event)" /><br />
   <input #name (keyup.enter)="onKeyUpWithTemplateVariable(name.value)" /><br />
 
-  <input (keyup)="fullname = $event.target.value; logFullname()" /><br />
+  <input (keyup)="fullname = $event.target.value"  (keyup.enter)=" logFullname()"/>
   {{ fullname }}<br />
-  <input [(ngModel)]="fullName" /> <br />
-  <p>{{ fullName }}</p>
+  <input [(ngModel)]="fullName" />
+  {{ fullName }}</p><br/>
+
+  {{course.title}}<br/>
+  {{course.rating}}<br/>
+  {{course.students}}<br/>
+  {{course.price}}<br/>
+  {{course.releaseData}}<br/>
 </div>
