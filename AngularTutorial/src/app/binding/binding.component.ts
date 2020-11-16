@@ -15,7 +15,7 @@ export class BindingComponent implements OnInit {
   public fullname = 'Abhishek';
 
   public course={
-    title:'Sample title',
+    title:'Sample title for Angular Course',
     rating:4.551,
     students:1000,
     price:100.659,
