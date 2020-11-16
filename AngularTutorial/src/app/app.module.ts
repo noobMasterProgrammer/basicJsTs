@@ -7,12 +7,14 @@ import { SampleComponent } from './sample/sample.component';
 import { SampleService } from './sample/sample.service';
 import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
+import { SummaryPipe } from './binding/summary.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SampleComponent,
     BindingComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,
