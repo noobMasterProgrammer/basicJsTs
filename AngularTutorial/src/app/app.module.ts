@@ -8,13 +8,15 @@ import { SampleService } from './sample/sample.service';
 import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { SummaryPipe } from './binding/summary.pipe';
+import { ComponentApiComponent } from './component-api/component-api.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SampleComponent,
     BindingComponent,
-    SummaryPipe
+    SummaryPipe,
+    ComponentApiComponent
   ],
   imports: [
     BrowserModule,
