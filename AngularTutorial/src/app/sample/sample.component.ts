@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { SampleService } from './sample.service';
+import { map } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-sample',
@@ -13,8 +16,11 @@ export class SampleComponent implements OnInit {
   private className = 'SampleComponent';
   private users: string[];
 
-  constructor(private sampleService: SampleService) {
+  constructor(private sampleService: SampleService,private activateRoute: ActivatedRoute) {
     console.log(`${this.className}.constructor is called`);
+    this.activateRoute.data.subscribe(res=>{
+      console.log(res);
+    });
    }
   getName(): string {
     return this.name;
