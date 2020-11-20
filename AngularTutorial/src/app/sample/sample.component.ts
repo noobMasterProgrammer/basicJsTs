@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SampleService } from './sample.service';
 import { map } from 'rxjs/operators';
+import { StorageService } from './storage.service';
 
 
 @Component({
@@ -16,11 +17,14 @@ export class SampleComponent implements OnInit {
   private className = 'SampleComponent';
   private users: string[];
 
-  constructor(private sampleService: SampleService,private activateRoute: ActivatedRoute) {
+  constructor(private sampleService: SampleService,private activateRoute: ActivatedRoute,private storageService: StorageService) {
     console.log(`${this.className}.constructor is called`);
-    this.activateRoute.data.subscribe(res=>{
+    // this.activateRoute.data.subscribe(res=>{
+    //   console.log(res);
+    // });
+    this.storageService.fetch().subscribe(res=>{
       console.log(res);
-    });
+    })
    }
   getName(): string {
     return this.name;
