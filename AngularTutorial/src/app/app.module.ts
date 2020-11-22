@@ -23,7 +23,8 @@ import { ComponentApiComponent } from './component-api/component-api.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [SampleService],
   bootstrap: [AppComponent]

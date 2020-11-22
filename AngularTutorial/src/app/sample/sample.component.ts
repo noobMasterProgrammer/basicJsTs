@@ -16,6 +16,7 @@ export class SampleComponent implements OnInit {
   courses = ['course-1', 'course-2', 'course-3', 'course-4', 'course-5'];
   private className = 'SampleComponent';
   private users: string[];
+  public binding ="/binding";
 
   constructor(private sampleService: SampleService,private activateRoute: ActivatedRoute,private storageService: StorageService) {
     console.log(`${this.className}.constructor is called`);
