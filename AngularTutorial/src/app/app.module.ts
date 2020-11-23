@@ -9,7 +9,7 @@ import { SampleService } from './sample/sample.service';
 import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { SummaryPipe } from './binding/summary.pipe';
-import { ComponentApiComponent } from './component-api/component-api.component';
+import { FavouriteComponent } from './favourite/favourite.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { ComponentApiComponent } from './component-api/component-api.component';
     SampleComponent,
     BindingComponent,
     SummaryPipe,
-    ComponentApiComponent
+    FavouriteComponent
   ],
   imports: [
     BrowserModule,
