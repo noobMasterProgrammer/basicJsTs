@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SampleService } from './sample.service';
 import { map } from 'rxjs/operators';
 import { StorageService } from './storage.service';
@@ -15,10 +15,12 @@ export class SampleComponent implements OnInit {
   name = 'Abhishek Ghosh';
   courses = ['course-1', 'course-2', 'course-3', 'course-4', 'course-5'];
   private className = 'SampleComponent';
-  private users: string[];
+  public users: string[];
   public binding ="/binding";
 
-  constructor(private sampleService: SampleService,private activateRoute: ActivatedRoute,private storageService: StorageService) {
+  
+
+  constructor(private sampleService: SampleService,private activateRoute: ActivatedRoute,private storageService: StorageService,private router: Router) {
     console.log(`${this.className}.constructor is called`);
     // this.activateRoute.data.subscribe(res=>{
     //   console.log(res);
@@ -37,9 +39,7 @@ export class SampleComponent implements OnInit {
       this.users = users;
     });
   }
-  public getUsers(): string[]{
-    console.log(`${this.className}.getUsers is called`);
-    return this.users;
-  }
+
+
 
 }

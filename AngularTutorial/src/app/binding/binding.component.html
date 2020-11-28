@@ -1,5 +1,4 @@
 <div>
-
   <p>{{ title }}</p>
   <p [textContent]="title"></p>
   <img src="{{ imageUrl }}" />
@@ -23,7 +22,9 @@
   </div>
 
 
-  <favourite [isLiked]="favourite.isLiked" (changed)="onFavouriteChanged($event)"></favourite>
+  <favourite [isLiked]="favourite.isLiked" (changed)="onFavouriteChanged($event)">
+    
+  </favourite>
 
 
   <input (keyup)="onKeyUpWithoutEventFilter($event)" />

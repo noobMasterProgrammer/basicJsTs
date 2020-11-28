@@ -10,6 +10,11 @@ import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { SummaryPipe } from './binding/summary.pipe';
 import { FavouriteComponent } from './favourite/favourite.component';
+import { PanelComponent } from './panel/panel.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { FavouriteComponent } from './favourite/favourite.component';
     SampleComponent,
     BindingComponent,
     SummaryPipe,
-    FavouriteComponent
+    FavouriteComponent,
+    PanelComponent,
+    DirectivesComponent,
+    TemplateDrivenFormComponent,
+    ReactiveFormComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
