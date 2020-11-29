@@ -18,10 +18,13 @@
 <ng-template #noCourses>
     <h2>No courses found</h2>  
 </ng-template>
+<button (click)="loadCourse()">Load course</button>
 <ul>
-    <li *ngFor="let course of courses; index as i; even as isEven">
+    <li *ngFor="let course of courses; index as i; even as isEven; trackBy:trackCourse;">
         {{i+1}}-{{course.subject}}
         <!-- <span *ngIf="isEven">-Best course</span> -->
         <button (click)="removeCourse(course)">remove</button>
     </li>
 </ul>
+<p>Safe Traversal operator example</p>
+<p>{{getCourseByIndex(6)?.subject}}</p>
