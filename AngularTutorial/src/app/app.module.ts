@@ -15,6 +15,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { InputFormatDirective } from './directives/input-format.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     DirectivesComponent,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
-    NavigationComponent
+    NavigationComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
