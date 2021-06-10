@@ -86,7 +86,6 @@ class RestCall {
     return jqXHR.responseHeaders;
   }
   performRestCall(requestEntity, actions,getResponseHeaders) {
-    console.log("I am here")
     if (!requestEntity.HTTP_METHOD || "GET" ==requestEntity.HTTP_METHOD) {
       $.ajax({
         url: requestEntity.URL,
